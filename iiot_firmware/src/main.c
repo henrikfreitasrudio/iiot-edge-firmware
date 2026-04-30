@@ -9,6 +9,7 @@
 #include "esp_log.h"
 #include "mqtt_client.h"
 #include "esp_random.h"
+#include "esp_netif.h"
 
 #define WIFI_SSID "Freitas_VillaggioNet"
 #define WIFI_PASS "agewarcraft"
@@ -37,6 +38,15 @@ void wifi_init(void)
     esp_wifi_set_config(WIFI_IF_STA, &wifi_config);
     esp_wifi_start();
 
+    esp_netif_ip_info_t ip_info;
+    esp_netif_t *netif = esp_netif_get_handle_from_ifkey("WIFI_STA_DEF");
+
+    if (netif)
+    {
+        esp_netif_get_ip_info(netif, &ip_info);
+        ESP_LOGI(TAG, "IP: " IPSTR, IP2STR(&ip_info.ip));
+    }
+
     ESP_LOGI(TAG, "WiFi iniciado...");
 }
 
@@ -50,6 +60,7 @@ void mqtt_start(void)
     esp_mqtt_client_start(client);
 
     ESP_LOGI(TAG, "MQTT iniciado...");
+    ESP_LOGI(TAG, "Conectando no MQTT: mqtt://10.0.0.100:1883");
 }
 
 void send_data_task(void *pvParameters)
