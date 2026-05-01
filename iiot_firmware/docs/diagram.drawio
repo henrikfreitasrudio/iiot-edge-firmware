@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="509_NcXhy477PECeA3At">
+    <mxGraphModel dx="1414" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-3" edge="1" parent="1" source="QpGLnb9o16GGOQDn_c9L-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QpGLnb9o16GGOQDn_c9L-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-4" connectable="0" parent="QpGLnb9o16GGOQDn_c9L-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="MQTT" vertex="1">
+          <mxGeometry relative="1" x="-0.0571" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ESP32" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-6" edge="1" parent="1" source="QpGLnb9o16GGOQDn_c9L-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QpGLnb9o16GGOQDn_c9L-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Mosquitto" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-8" edge="1" parent="1" source="QpGLnb9o16GGOQDn_c9L-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QpGLnb9o16GGOQDn_c9L-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="410" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Worker" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-10" edge="1" parent="1" source="QpGLnb9o16GGOQDn_c9L-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QpGLnb9o16GGOQDn_c9L-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="InfluxDB" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="QpGLnb9o16GGOQDn_c9L-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Grafana / API" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="850" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
